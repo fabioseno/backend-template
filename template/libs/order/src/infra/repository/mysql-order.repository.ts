@@ -1,5 +1,5 @@
 import { OrderRepository } from "@app/order/domain/repository/order.repository";
-import { Order } from "@app/order/domain/entity/Order";
+import { Order } from "@app/order/domain/entity/order";
 
 export default class MySQLOrderRepository implements OrderRepository {
     find(filter: any): Promise<Order[]> {

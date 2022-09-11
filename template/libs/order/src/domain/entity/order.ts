@@ -1,4 +1,4 @@
-import OrderItem from "./OrderItem";
+import OrderItem from "./order-item";
 
 export class Order {
 
