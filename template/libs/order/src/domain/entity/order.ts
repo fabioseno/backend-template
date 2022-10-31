@@ -1,10 +1,14 @@
-import OrderItem from "./order-item";
+import { OrderItem } from "./order-item";
 
 export class Order {
 
+    readonly id: string;
+
     constructor(
-        readonly id: string,
         readonly date: Date,
-        readonly items: OrderItem[] = []) { }
-        
+        readonly items: OrderItem[] = [],
+    ) {
+        this.id = new Date().getTime().toString();
+    }
+
 }

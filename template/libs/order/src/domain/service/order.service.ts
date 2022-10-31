@@ -7,19 +7,19 @@ export class OrderService {
 
     constructor(private orderRepository: OrderRepository) { }
 
-    find(filter): Promise<Order[]> {
-        return this.orderRepository.find(filter);
+    findAll(filter): Promise<Order[]> {
+        return this.orderRepository.findAll(filter);
     }
 
-    create(order): Promise<Order> {
+    create(order: Order): Promise<Order> {
         return this.orderRepository.create(order);
     }
 
-    update(orderId, order): Promise<Order> {
+    update(orderId: string, order: Order): Promise<Order> {
         return this.orderRepository.update(orderId, order);
     }
 
-    remove(orderId): Promise<boolean> {
+    remove(orderId: string): Promise<boolean> {
         return this.orderRepository.remove(orderId);
     }
 

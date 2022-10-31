@@ -1,9 +1,8 @@
-export default class OrderItem {
+export class OrderItem {
 
     constructor(
         readonly productId: string,
-        readonly quantity: string,
-        readonly unitPrice: number,
-        readonly totalPrice: number) { }
+        readonly quantity: number,
+        readonly unitPrice: number) { }
         
 }

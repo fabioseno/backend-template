@@ -2,7 +2,7 @@ import { Order } from "../entity/order";
 
 export abstract class OrderRepository {
 
-    abstract find(filter): Promise<Order[]>;
+    abstract findAll(filter): Promise<Order[]>;
 
     abstract create(data: Order): Promise<Order>;
 
